@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page Customers - Car Rental</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="../styles/navbar.css" />
+    <link rel="stylesheet" href="../styles/footer.css" />
+    <link rel="stylesheet" href="../styles/login.css" />
+  </head>
+
+  <body>
+    <!-- navigation bar -->
+    <nav class="navbar">
+      <div class="logo"><a href="../index.html">Car-Rental</a></div>
+      <ul class="options">
+        <li><a href="./loginUser.html">Customers</a></li>
+        <li><a href="./loginAgency.html">Car Agency</a></li>
+      </ul>
+    </nav>
+
+    <!-- main section -->
+    <div class="container">
+      <div class="container1">
+        <div class="heading">LOGIN FORM</div>
+        <div class="signin-options">
+          <button class="signin-btn btn1" onclick="login()">Login</button>
+          <button class="signin-btn btn2" onclick="signUp()">SignUp</button>
+        </div>
+
+        <form class="form" action="javascript:redirect();">
+          <input
+            class="input-field sign-up hide"
+            type="text"
+            name="fname"
+            placeholder="Full name"
+          />
+          <input
+            class="input-field login sign-up"
+            type="email"
+            name="email"
+            placeholder="Email"
+          />
+          <input
+            class="input-field sign-up hide"
+            type="tel"
+            name="telephone"
+            placeholder="Phone number"
+          />
+          <input
+            class="input-field login sign-up"
+            type="password"
+            name="password"
+            placeholder="Password"
+          />
+          <input
+            class="input-field sign-up hide"
+            type="password"
+            name="cpassword"
+            placeholder=" Confirm Password"
+          />
+          <button class="btn"><a href="./viewCar.html">Login</a></button>
+        </form>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+      <p class="copyright">Aaris Ahmed | © All rights reserved</p>
+      <p class="assignment">
+        This is not an actual website. It is just made as a part of assignment
+      </p>
+    </footer>
+
+    <!-- javacript -->
+    <script src="../scripts/loginUser.js"></script>
+  </body>
+</html>

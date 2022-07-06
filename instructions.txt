@@ -1,0 +1,8 @@
+How to view the project
+
+1. Download the zip folder.
+2. Extract all the contents of the file.
+3. Run the index.html file on your system.
+
+
+Working snapshots of the code are attached in the snapshots folder.

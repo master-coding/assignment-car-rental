@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Vehicle - Car Rental</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="../styles/navbar.css" />
+    <link rel="stylesheet" href="../styles/footer.css" />
+    <link rel="stylesheet" href="../styles/book-car.css" />
+  </head>
+
+  <body>
+    <!-- navigation bar -->
+    <nav class="navbar">
+      <div class="logo"><a href="../index.html">Car-Rental</a></div>
+      <ul class="options">
+        <li><a href="./loginUser.html">Customers</a></li>
+        <li><a href="./loginAgency.html">Car Agency</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <div class="container1">
+        <div class="heading">BOOK CAR</div>
+
+        <form class="form">
+          <input
+            class="input-field"
+            type="text"
+            name="from-date"
+            placeholder="From"
+            onfocus="(this.type = 'date')"
+            onblur="(this.type = 'text')"
+            required
+          />
+          <input
+            class="input-field"
+            type="text"
+            name="to-date"
+            placeholder="To"
+            onfocus="(this.type = 'date')"
+            onblur="(this.type = 'text')"
+            required
+          />
+        </form>
+        <button class="btn" onclick="booked()">Book Car</button>
+        <button class="btn"><a href="./viewCar.html">Show All Cars</a></button>
+
+        <!-- Dialog form for successful booking -->
+        <div id="booked" class="hide">
+          <p class="corner" onClick="booked()">❌</p>
+          <p class="congratulations">Congratulations your car is booked.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+      <p class="copyright">Aaris Ahmed | © All rights reserved</p>
+      <p class="assignment">
+        This is not an actual website. It is just made as a part of assignment
+      </p>
+    </footer>
+
+    <!-- javacript -->
+    <script>
+      const booked = () => {
+        const isBooked = document.getElementById("booked");
+        isBooked.classList.toggle("show");
+      };
+    </script>
+  </body>
+</html>
