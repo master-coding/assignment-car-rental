@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(230 255 230);
+  background: url('../images/loginBackground1.jpg');
+  color: white;
+}
+
+.container {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container1 {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  background-color: white;
+  color: black;
+}
+
+.heading {
+  margin: 50px auto 10px auto;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* width: 100vw; */
+  margin-top: 30px;
+}
+
+.input-field {
+  padding: 8px;
+  margin: 5px;
+  width: 85%;
+  border-radius: 10px;
+  display: block;
+  border: 1.3px solid black;
+}
+
+.input-field:hover {
+  transform: scaleX(1.05);
+  font-size: medium;
+}
+
+.input-field:focus {
+  transform: scaleX(1.05);
+  font-size: medium;
+}
+
+.btn {
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px solid black;
+  width: 50%;
+  margin: 30px;
+  background-color: white;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  font-size: large;
+}
+
+@media (max-width: 900px) {
+  .container1 {
+    width: 50%;
+  }
+}
+
+@media (max-width: 500px) {
+  .container1 {
+    width: 70%;
+  }
+}

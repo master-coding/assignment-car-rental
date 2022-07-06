@@ -1,0 +1,106 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url('../images/loginBackground1.jpg');
+  color: white;
+}
+
+.container {
+  height: 90vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.car {
+  width: 300px;
+  background-color: rgb(252, 240, 175);
+  color: black;
+  
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 7px;
+  border-radius: 50px;
+  margin: 10px;
+}
+
+.car-name {
+  grid-column: 1 / 4;
+  font-size: 1.4rem;
+  font-weight: 900;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  
+}
+
+.vehicle-model {
+  text-align: center;
+  font-weight: 400;
+  
+}
+
+.vehicle-number {
+  text-align: center;
+  font-weight: 400;
+}
+
+.seats {
+  text-align: center;
+  font-weight: 400;
+}
+
+.vehicle-model__model {
+  text-align: center;
+  font-weight: 600;
+  
+}
+
+.vehicle-number__number {
+  text-align: center;
+  font-weight: 600;
+}
+
+.vehicle__seats {
+  text-align: center;
+  font-weight: 600;
+}
+
+.rent {
+  grid-column: 1 / 4;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+}
+
+.book-car a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.book-car {
+  grid-column: 1 / 4 ;
+
+  display: block;
+  width: 35%;
+  margin: 5px auto;
+  padding: 2px;
+  border-radius: 20px;
+  font-weight: 600;
+  background-color: rgb(252, 240, 175);
+}
+
+.book-car:hover {
+  transform: scale(1.05);
+  font-size: large;
+}

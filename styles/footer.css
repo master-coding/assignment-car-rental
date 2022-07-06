@@ -1,0 +1,25 @@
+.footer {
+  background-color: black;
+  color: white;
+  height: 5vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright {
+  font-size: medium;
+  font-weight: 700;
+}
+
+.assignment {
+  text-align: center;
+}
+
+@media (max-width: 450px) {
+  .assignment {
+    display: none;
+  }
+}

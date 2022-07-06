@@ -1,0 +1,42 @@
+.navbar {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5vh;
+  font-size: large;
+}
+
+.logo {
+  font-size: xx-large;
+  font-weight: bold;
+  margin: 15px;
+}
+
+.logo a {
+  text-decoration: none;
+  color: white;
+}
+
+.logo a:hover {
+  color: crimson;
+  font-size: 2.5rem;
+}
+
+.options{
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  
+}
+
+.options li a {
+  text-decoration: none;
+  color: white;
+  margin: 10px;
+}
+
+.options li a:hover {
+  color: crimson;
+  font-size: larger;
+}
